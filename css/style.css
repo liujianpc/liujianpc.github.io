@@ -488,6 +488,7 @@ a {
   color: #b0a0aa;
 }
 #header .profilepic {
+  background: url("./messi.png");
   text-align: center;
   display: block;
   border: 5px solid #fff;
