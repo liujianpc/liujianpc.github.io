@@ -124,7 +124,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/C语言/" style="font-size: 10px;">C语言</a> <a href="/tags/Django/" style="font-size: 10px;">Django</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/硬件/" style="font-size: 10px;">硬件</a>
+						<a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/C语言/" style="font-size: 10px;">C语言</a> <a href="/tags/Django/" style="font-size: 10px;">Django</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/Linux-Ubuntu/" style="font-size: 10px;">Linux Ubuntu</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/硬件/" style="font-size: 10px;">硬件</a>
 					</div>
 				</section>
 				
@@ -216,10 +216,106 @@
 </nav>
       <div class="body-wrap">
   
-    <article id="post-git" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-git-study" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/09/13/git/" class="article-date">
+      <a href="/2015/09/14/git-study/" class="article-date">
+  	<time datetime="2015-09-13T16:11:19.000Z" itemprop="datePublished">2015-09-14</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/09/14/git-study/">git-study</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Git学习笔记">Git学习笔记</h2><h3 id="ubuntu下git的安装">ubuntu下git的安装</h3><blockquote>
+<ol>
+<li><p>旧版本的ubuntu linux的安装命令：sudo apt-get install git-core<br>（我的linux是ubuntu 10.04，需要此条命令才能成功安装）</p>
+</li>
+<li><p>新版本的ubuntu只需要：sudo apt-get install git</p>
+</li>
+<li><p>以前老版本的Linux上有一个软件交git unit tools（安装命令是sudo apt-get install git并不是安装git代码仓库）。。所以只能使用git-core。之后才改为git。</p>
+</li>
+<li><p>基本命令：<br> git init<br> git add<br> git status<br> git commit -m “….”</p>
+</li>
+</ol>
+</blockquote>
+<hr>
+<ol>
+<li>Git是分布式代码管理</li>
+<li>Git多平台</li>
+<li>Git是Linus（Linux之父的作品，大牛最开始是用C写的）</li>
+<li>Git的命令<blockquote>
+<p>Git最好在Linux上使用</p>
+</blockquote>
+</li>
+</ol>
+<ul>
+<li>建立Git工作目录:mkdir GitPrj<br>目录下有文件_git(非常重要，不能轻易删除)<ul>
+<li>Git初始化： git init</li>
+<li>在目录下建立一个readme.txt</li>
+<li>添加需要提交的文本文件（<strong>Git只能管理文本文件，微软的wrod doc格式是二进制文件，不能管理</strong>）<br>添加命令：git add reame.txt。。git可以添加多个文件，然后一次提交：比如：git add readme_1.txt readme_2.txt…readme_N.txt</li>
+<li>提交：git commit -m “提交说明”</li>
+<li>git status查看git状态</li>
+<li>git 查看文件先后的区别：git diff readme.txt</li>
+<li>git 版本回退，首先查看提交日志：git log（完美显示加 –pretty=oneline）</li>
+<li>HEAD表示当前版本</li>
+<li>HEAD^表示前一个版本</li>
+<li>HEAD^^表示前前一个版本</li>
+<li>当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100</li>
+<li>git reset –hard HEAD^ 回退到上一个版本。。以此类推</li>
+<li>也可以用版本ID来回退git reset –hard 123。。</li>
+<li>电脑关机后，第二天后悔，需要回退，则需要命令git reflog查看命令历史。。。找到相应版本号的id之后，利用git reset –hard id  也可以回退</li>
+</ul>
+</li>
+</ul>
+<hr>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-Linux" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/09/13/Linux/" class="article-date">
   	<time datetime="2015-09-13T15:29:23.000Z" itemprop="datePublished">2015-09-13</time>
 </a>
     </div>
@@ -233,7 +329,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/09/13/git/">git</a>
+      <a class="article-title" href="/2015/09/13/Linux/">Linux基本命令学习笔记</a>
     </h1>
   
 
@@ -370,7 +466,7 @@ file .profile exists
       
       
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux-Ubuntu/">Linux Ubuntu</a></li></ul>
 	</div>
 
       
@@ -774,7 +870,7 @@ file .profile exists
     <div class="article-entry" itemprop="articleBody">
       
         <p>吃饭、睡觉、修电脑</p>
-<p>标签（空格分隔）： 硬件</p>
+<p>标签（空格分隔）： 硬件 修电脑</p>
 <hr>
 <p><strong>1.两滴502胶水引发的惨案</strong></p>
 <blockquote>
@@ -786,7 +882,10 @@ file .profile exists
 <p>液晶显示器是由封住了液晶的玻璃，（<strong>液晶是一种半液态的东东，在无电场作用下，液晶分子的排列是没有规则的，只有在电场的作用下，液晶分子的排列才是有规则的，这样才能达到漏光透视的效果。</strong>）玻璃上贴了一层偏光膜，偏光膜的作用就是光学中的滤光作用。用于显示各种颜色。如果没有偏光膜，那就只能显示白色。在液晶玻璃片的背后有一个银色的反光板，当然这个反光板是用于反光的，给液晶提供更多的光。这样我们才能看见很亮的显示器。这个光的来源是装载液晶屏底部的灯管（<strong>液晶屏分为LCD和LED背光，这二者的区别，在于液晶屏的背光，也就是二者的光源的不同。LCD是采用荧光管提供光源，应该叫CCFL，神马阴极冷荧光什么的。其实就跟生活中的日光灯是一样的，日光灯的原理，高中就学过啊，就是荧光灯管在瞬间高电压的激发下，将灯管中的汞蒸气击穿导电，分子再撞击荧光分子，才能原子的能级跃迁，放出光能。大概就是这样的。其中最关键的是那个瞬间高压，采用的是镇流器，也就是电感。o(︶︿︶)o 唉，好多姿势。你看，其实修电脑还可以复习和学习到很多姿势呢。所以LCD屏幕需要高压条来提供瞬间高压来使得荧光灯管发光，如果屏幕不亮，很有可能是灯管或者高压条的问题，那个高压基本是在12V之上，用普通的万用表是测不出来的，因为频率太高，万用表的采样频率太低，所以测不出来。关于采样频率，这里又回想到了《信号与系统》里面的采样定理了（<em>要复原一个信号，采样频率至少是被采样频率的2倍</em>）。而LED的屏幕采用led，也就是发光二极管灯条，那个就需要另外的电压转换条来提供电压，LED当今有两种控制发光方法：1、恒流控制。2、恒压控制。一般采用恒流，恒流的更稳定</strong>）。</p>
 </blockquote>
 <hr>
-<h2 id="以上大概就是液晶显示器的基本原理了"><strong>以上大概就是液晶显示器的基本原理了</strong></h2><p><strong>3、换屏幕续集</strong><br>&gt;<br>因为这款电脑的显示器是14寸的16：10的比例，这种显示器都是老电脑才有的，现在的显示器都是14寸的16：9的比例，所以一般电脑的显示器还配不上。想到我舅舅有一个华硕的老本子，那个本子应该是16：10的显示器，然后拿来换上了。刚开始，可能是我太粗暴了。直接用洗洁精去洗液晶屏，然后没吹干就装上了，一开始就可以点亮的（一般的显示器都是有30脚的屏线，所以一般都是没多大的区别的，都基本兼容）。后面正常开机后，居然闪了几下，于是我机智地关机了。这下又好了。高压条上的状态灯不亮。可以正常开机，打着手电筒是可以看清电脑内容的，以为是高压条坏了，于是买了高压条换上，不亮。</p>
+<h2 id="以上大概就是液晶显示器的基本原理了"><strong>以上大概就是液晶显示器的基本原理了</strong></h2><p><strong>3、换屏幕续集</strong></p>
+<blockquote>
+<p>因为这款电脑的显示器是14寸的16：10的比例，这种显示器都是老电脑才有的，现在的显示器都是14寸的16：9的比例，所以一般电脑的显示器还配不上。想到我舅舅有一个华硕的老本子，那个本子应该是16：10的显示器，然后拿来换上了。刚开始，可能是我太粗暴了。直接用洗洁精去洗液晶屏，然后没吹干就装上了，一开始就可以点亮的（一般的显示器都是有30脚的屏线，所以一般都是没多大的区别的，都基本兼容）。后面正常开机后，居然闪了几下，于是我机智地关机了。这下又好了。高压条上的状态灯不亮。可以正常开机，打着手电筒是可以看清电脑内容的，以为是高压条坏了，于是买了高压条换上，不亮。</p>
+</blockquote>
 <hr>
 <blockquote>
 <p>偶滴神啊，真实没玩没了了。换高压条没用，就拆主板啊，测屏线保护电路，测到一个保险管是不通的（当时，庆幸啊。只要把这保险管给短路就可以了，我好机智啊。然而。。。）然而，都是贴片元件，用那么粗的电烙铁去焊接，搞出一身汗，总算是把保险管给短路了，而且也把保险管下方的一个电容给搞掉了o(︶︿︶)o 唉。。结果。。。没用</p>
